@@ -1,0 +1,109 @@
+/* Base styles for the page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f3f4f6;
+}
+
+/* Center the login container vertically and horizontally */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styling for the card containing the login form */
+.login-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo styling */
+.logo {
+    width: 80px;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+/* Login title styles */
+.login-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+}
+
+/* Error message styling */
+.error-message {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+/* Container for input fields */
+.input-container {
+    margin-bottom: 20px;
+}
+
+/* Label styling for inputs */
+.input-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+/* Input field styling */
+.input-field {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+/* Login button styling */
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hover effect for the login button */
+.login-button:hover {
+    background-color: #0056b3;
+}
+
+/* Link styling for the sign-up link */
+.signup-link {
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.signup-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Link styling for the forgot password link */
+.forgot-password-link {
+    font-size: 14px;
+    color: #333333;
+    text-align: center;
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+}
