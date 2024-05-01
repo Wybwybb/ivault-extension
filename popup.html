@@ -7,24 +7,48 @@
     <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div class="login-container">
+    <div class="container">
+        
         <div class="login-card">
-            <img src="ILogo.png" alt="Logo" class="logo">
-            <h1 class="login-title">LOGIN</h1>
+            <img src="file:///C:/Users/PC/Desktop/ivault/ivault-extension/icons/iLogo.png" alt="Logo" class="logo">
+            <h1 class="title">LOGIN for iVault</h1>
             <div class="error-message"></div>
-            <form id="login-form">
+            <form id="login-form" class="form">
                 <div class="input-container">
-                    <label for="email" class="input-label">Username</label>
-                    <input type="email" name="email" id="email" class="input-field" placeholder="name@company.com" required>
+                    <label for="username" class="input-label">Username</label>
+                    <input type="text" name="username" id="username" class="input-field" placeholder="Username" required>
                 </div>
                 <div class="input-container">
                     <label for="password" class="input-label">Password</label>
                     <input type="password" name="password" id="password" class="input-field" placeholder="••••••••" required>
                 </div>
-                <button type="submit" class="login-button">Login</button>
+                <button type="submit" class="button">Login</button>
             </form>
-            <p class="signup-link">Don’t have an account yet? <a id="signupLink" href="#">Sign up</a></p>
-            <a id="forgotPasswordLink" href="#" class="forgot-password-link">Forgot password?</a>
+            <a id="forgotPasswordLink" href="#" class="link-text">Forgot password?</a>
+            <p class="link-text">Don’t have an account yet? <a id="signupLink" href="#">Sign up</a></p>
+        </div>
+        
+        <div class="card">
+            <h2 class="title">Password Generator</h2>
+            <button id="generatePassword" class="button">Generate Password</button>
+            <input type="text" id="generatedPassword" class="input-field" readonly>
+            <input type="number" id="passwordLength" placeholder="Password Length (8-32)" class="input-field">
+            <input type="text" id="passwordSeed" placeholder="Seed characters (optional)" class="input-field">
+            <div class="flex justify-between mt-2">
+                <div>
+                    <label><input type="checkbox" id="includeNumbers"> Include Numbers</label>
+                </div>
+                <div>
+                    <label><input type="checkbox" id="includeSymbols"> Include Symbols</label>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 class="title">Password Health Check</h2>
+            <input type="text" id="passwordToCheck" class="input-field" placeholder="Enter password to check">
+            <button id="checkPasswordHealth" class="button">Check Health</button>
+            <div id="healthResult" class="health-result"></div>
         </div>
     </div>
     <script src="popup.js"></script>

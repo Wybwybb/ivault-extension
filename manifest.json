@@ -10,7 +10,7 @@
         "webNavigation"
     ],
     "host_permissions": [
-        "http://localhost/*"
+        "http://localhost/*" 
     ],
     "action": {
         "default_popup": "popup.html",
